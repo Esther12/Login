@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background: lightyellow">
+
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<head>
+  <title>Passenger</title>
+</head>
+<body>
+  <div class="container">  <!--使用支持响应式布局的容器类型，另一个是container-fluid占据全部视口（viewpoint）的容器-->
+    
+      <h3  class="page-header">Regester page</h3>
+    
+    <form>
+            <div class="row">
+            <div class="form-group col-sm-7">
+        <label for="user">Phone Number</label>
+        <input type="text" class="form-control" id="user" placeholder="Phone Number" size="15" maxlength="10" onkeyup="value=this.value.replace(/\D+/g,'')">
+    </div></div>
+	<div class="row">
+        <div class="form-group col-sm-7">
+		<label for="Name">Name</label>
+        <input type="Name" class="form-control" size="15" maxlength="10" id="name" placeholder="Name">
+</div></div>
+<form>
+            <div class="row">
+        <div class="form-group col-sm-7">
+        <label for="Password1">Password</label>
+        <input type="password" class="form-control" size="20" maxlength="15" id="pwd" placeholder="password" />
+</div></div>
+			<div class="row">
+        <div class="form-group col-sm-7">
+		<label for="Password2">Re-enter the Password</label>
+        <input type="password" class="form-control" size="20" maxlength="15" onchange="checkpwd(this);"  placeholder="password"/><!--onchange事件触发检测-->
+    <div id="tishi" style="color:red;visibility:hidden;">Please insert the same password!</div>
+</div></div>
+</form>
+
+<script type="text/javascript">
+function checkpwd(inp)
+{
+var pwd1=document.getElementById("pwd");
+var div1=document.getElementById("tishi");
+if(div1.value!=pwd1.value)
+{
+div1.style.visibility="visible";
+inp.focus();
+}
+else
+div1.style.visibility="hidden";
+}
+</script>
+</script>
+            <br>
+			 <div>
+      <p>If you already have a account, just click the Login</p><a href="file:///C:/Users/ThinkPad-pc/Desktop/new%202.html"></div>
+	  <div><p><button type="submmit" class="btn btn-info btn-lg col-sm-3"">Login</button></div><br></p>
+		<br>
+      <div><p><button type="submmit" class="btn btn-danger btn-lg col-sm-3"">Submit</button></p>
+	  </div>
+	 
+    </form>  
+  </div>
+</body>
+</html>
+</body>
